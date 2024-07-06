@@ -1,7 +1,7 @@
 import express, { Application, Request, Response } from 'express'
 const app:Application = express()
 import cors from 'cors'
-import { MouseRoutes } from './products/mouse/mouse.route'
+import { MouseRoutes } from './products/mouse/product.route'
 
 
 //parser
