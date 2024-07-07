@@ -3,8 +3,10 @@ import { TProduct } from "./product.interface";
 import { ProductModel } from "./product.model";
 
 const createProductFromDatabase = async (productData: TProduct) => {
+
   const result = await ProductModel.create(productData);
   return result;
+
 };
 
 const getProductFromDatabase = async() => {

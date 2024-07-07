@@ -1,6 +1,6 @@
 type TVariantProduct = {
   type: string;
-  value: boolean;
+  value: string;
 };
 
 type TProductInventory = {
@@ -14,6 +14,6 @@ export type TProduct = {
   price: number;
   category: string;
   tags: string[];
-  variants: TVariantProduct[];
+  variants:TVariantProduct[];
   inventory: TProductInventory; 
 };
