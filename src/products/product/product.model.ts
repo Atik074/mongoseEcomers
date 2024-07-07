@@ -22,19 +22,9 @@ const productSchema = new Schema<TProduct>({
 });
 
 
-//
-// Example middleware to log deletions
-// productSchema.pre('find' , function(next){
-
-//      this.find({isDeleted:{$ne:true}})
-//      next()
-// })
 
 
-// productSchema.pre('findOne' , function(next){
-//      this.find({isDeleted:{$ne:true}})
-//       next()
-// })
+export const ProductModel = model<TProduct>("ProductModel", productSchema );
 
 
-export const ProductModel = model<TProduct>("ProductModel", productSchema);
+

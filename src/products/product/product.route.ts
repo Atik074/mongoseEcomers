@@ -5,8 +5,8 @@ const router = express.Router();
 
 router.post("/create-product", ProductController.createProduct);
 router.get("/", ProductController.getAllProducts);
-router.get('/:productId' , ProductController.findSingleProduct)
-router.put('/:productId' , ProductController.updateProduct)
-router.delete('/:productId' , ProductController.deleteProduct)
+router.get("/:productId", ProductController.findSingleProduct);
+router.put("/:productId", ProductController.updateProduct);
+router.delete("/:productId", ProductController.deleteProduct);
 
-export const MouseRoutes = router;
+export const ProductRoutes = router;
